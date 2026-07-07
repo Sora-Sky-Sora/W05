@@ -745,7 +745,7 @@ Run `conf_mat(test_preds, truth = responded, estimate = .pred_class)` and use th
 
 1.  **How many customers actually responded ("yes") and were correctly predicted to respond? What is this cell called?**
 
-    > No customers were correctly predicted as responders. This outcome is called a true positive (TP).
+    > No customers were correctly predicted as responders. The cell for correctly predicted responders is called true positive (TP).
 
 2.  **How many customers actually responded but were predicted "no"? What is this cell called, and what does it cost a marketer**
 
