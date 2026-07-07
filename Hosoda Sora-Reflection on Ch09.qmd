@@ -909,8 +909,8 @@ multi_preds |>
 
 ### Published report on GitHub Pages
 
-<>
+<https://sora-sky-sora.github.io/W05/Hosoda%20Sora-Reflection%20on%20Ch09.html>
 
 ### GitHub Repository
 
-<>
+<https://github.com/Sora-Sky-Sora/W05>
