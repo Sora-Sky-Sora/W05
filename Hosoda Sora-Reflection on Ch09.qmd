@@ -823,7 +823,7 @@ Part B — Custom `metric_set()`
 
 **Create a `metric_set()` containing `accuracy`, `roc_auc`, `sens`, `spec`, and `f_meas`. Apply it to `test_preds`. If you had to report just two of these five numbers to a VP of Marketing who is unfamiliar with machine learning metrics, which would you choose and why?**
 
-> Accuracy alone does not describe this model very well because the response rate is low. ROC AUC summarizes performance across different thresholds, while sensitivity focuses on customers who actually respond. Together, these measures provide a clearer picture of model performance for a direct-mail campaign.
+> ROC AUC and sensitivity are the most informative measures for this model. Accuracy alone is less useful because the response rate is low. ROC AUC summarizes performance across different classification thresholds, while sensitivity shows how many actual responders are identified. Both measures are useful when evaluating a direct-mail campaign.
 
 ```{r ex9-2b}
 marketing_metrics <- metric_set(accuracy, roc_auc, sens, spec, f_meas)

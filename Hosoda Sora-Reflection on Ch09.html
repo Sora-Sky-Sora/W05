@@ -5116,7 +5116,7 @@ Prediction yes  no
 <p>Part B — Custom <code>metric_set()</code></p>
 <p><strong>Create a <code>metric_set()</code> containing <code>accuracy</code>, <code>roc_auc</code>, <code>sens</code>, <code>spec</code>, and <code>f_meas</code>. Apply it to <code>test_preds</code>. If you had to report just two of these five numbers to a VP of Marketing who is unfamiliar with machine learning metrics, which would you choose and why?</strong></p>
 <blockquote class="blockquote">
-<p>Accuracy alone does not describe this model very well because the response rate is low. ROC AUC summarizes performance across different thresholds, while sensitivity focuses on customers who actually respond. Together, these measures provide a clearer picture of model performance for a direct-mail campaign.</p>
+<p>ROC AUC and sensitivity are the most informative measures for this model. Accuracy alone is less useful because the response rate is low. ROC AUC summarizes performance across different classification thresholds, while sensitivity shows how many actual responders are identified. Both measures are useful when evaluating a direct-mail campaign.</p>
 </blockquote>
 <div class="cell">
 <details open class="code-fold">
@@ -6549,7 +6549,7 @@ Prediction yes  no
 <span id="cb55-823"><a href="#cb55-823" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb55-824"><a href="#cb55-824" aria-hidden="true" tabindex="-1"></a>**Create a `metric_set()` containing `accuracy`, `roc_auc`, `sens`, `spec`, and `f_meas`. Apply it to `test_preds`. If you had to report just two of these five numbers to a VP of Marketing who is unfamiliar with machine learning metrics, which would you choose and why?**</span>
 <span id="cb55-825"><a href="#cb55-825" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb55-826"><a href="#cb55-826" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Accuracy alone does not describe this model very well because the response rate is low. ROC AUC summarizes performance across different thresholds, while sensitivity focuses on customers who actually respond. Together, these measures provide a clearer picture of model performance for a direct-mail campaign.</span></span>
+<span id="cb55-826"><a href="#cb55-826" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; ROC AUC and sensitivity are the most informative measures for this model. Accuracy alone is less useful because the response rate is low. ROC AUC summarizes performance across different classification thresholds, while sensitivity shows how many actual responders are identified. Both measures are useful when evaluating a direct-mail campaign.</span></span>
 <span id="cb55-827"><a href="#cb55-827" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb55-828"><a href="#cb55-828" aria-hidden="true" tabindex="-1"></a><span class="in">```{r ex9-2b}</span></span>
 <span id="cb55-829"><a href="#cb55-829" aria-hidden="true" tabindex="-1"></a>marketing_metrics <span class="ot">&lt;-</span> <span class="fu">metric_set</span>(accuracy, roc_auc, sens, spec, f_meas)</span>
